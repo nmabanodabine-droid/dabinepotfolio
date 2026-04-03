@@ -1,0 +1,203 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: #1a1a1a;
+  --foreground: #FFF8E7;
+  --card: #242424;
+  --card-foreground: #FFF8E7;
+  --popover: #242424;
+  --popover-foreground: #FFF8E7;
+  --primary: #E6A520;
+  --primary-foreground: #1a1a1a;
+  --secondary: #2d2d2d;
+  --secondary-foreground: #FFD77A;
+  --muted: #2d2d2d;
+  --muted-foreground: #FFF8E7;
+  --accent: #FFD77A;
+  --accent-foreground: #1a1a1a;
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: #ffffff;
+  --border: #333333;
+  --input: #2d2d2d;
+  --ring: #E6A520;
+  --chart-1: #E6A520;
+  --chart-2: #FFD77A;
+  --chart-3: #FFF8E7;
+  --chart-4: #7A4A00;
+  --chart-5: #c8860f;
+  --radius: 0.625rem;
+  --sidebar: #fff3d0;
+  --sidebar-foreground: #2d2d2d;
+  --sidebar-primary: #E6A520;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #FFD77A;
+  --sidebar-accent-foreground: #7A4A00;
+  --sidebar-border: #f0d89a;
+  --sidebar-ring: #E6A520;
+}
+
+.dark {
+  --background: #7A4A00;
+  --foreground: #FFF8E7;
+  --card: #8f5800;
+  --card-foreground: #FFF8E7;
+  --popover: #8f5800;
+  --popover-foreground: #FFF8E7;
+  --primary: #FFD77A;
+  --primary-foreground: #7A4A00;
+  --secondary: #E6A520;
+  --secondary-foreground: #FFF8E7;
+  --muted: #E6A520;
+  --muted-foreground: #FFF8E7;
+  --accent: #FFD77A;
+  --accent-foreground: #7A4A00;
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --border: #E6A520;
+  --input: #E6A520;
+  --ring: #FFD77A;
+  --chart-1: #FFD77A;
+  --chart-2: #FFF8E7;
+  --chart-3: #E6A520;
+  --chart-4: #c8860f;
+  --chart-5: #7A4A00;
+  --sidebar: #8f5800;
+  --sidebar-foreground: #FFF8E7;
+  --sidebar-primary: #FFD77A;
+  --sidebar-primary-foreground: #7A4A00;
+  --sidebar-accent: #E6A520;
+  --sidebar-accent-foreground: #FFF8E7;
+  --sidebar-border: #E6A520;
+  --sidebar-ring: #FFD77A;
+}
+
+@theme inline {
+  --font-sans: 'Geist', 'Geist Fallback';
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom selection color */
+::selection {
+  background-color: #E6A52055;
+  color: #FFF8E7;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333333;
+  border-radius: 6px;
+  border: 3px solid #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #E6A520;
+}
+
+/* Focus visible styles */
+:focus-visible {
+  outline: 2px solid #E6A520;
+  outline-offset: 4px;
+}
+
+/* Fade-up animation for intersection observer */
+.fade-up.animate-in {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Custom scrollbar for windows */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #333333;
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #E6A520;
+}
+
+/* Prevent text selection while dragging windows */
+.select-none {
+  user-select: none;
+}
