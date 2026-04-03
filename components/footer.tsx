@@ -68,7 +68,7 @@ export function Footer() {
             className="group text-muted-foreground hover:text-primary transition-colors duration-300 font-mono text-xs"
           >
             <span className="block mb-2 group-hover:-translate-y-1 transition-transform duration-300">
-              Designed & Built by Nshuti Manabo Dabine
+              Designed & Built by Nshuti Mabano Dabine
             </span>
             <span className="text-muted-foreground/60">
               Built with Next.js & Tailwind CSS

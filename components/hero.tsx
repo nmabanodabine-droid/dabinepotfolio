@@ -78,7 +78,7 @@ export function Hero() {
         <h1 
           className={`text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-foreground text-balance transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
         >
-          Nshuti Manabo Dabine
+          Nshuti Mabano Dabine
         </h1>
 
         <div 

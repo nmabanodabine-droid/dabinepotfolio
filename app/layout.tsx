@@ -6,8 +6,8 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Nshuti Manabo Dabine | Software Developer',
-  description: 'Nshuti Manabo Dabine - A software developer passionate about crafting accessible, pixel-perfect digital experiences for the web.',
+  title: 'Nshuti Mabano Dabine | Software Developer',
+  description: 'Nshuti Mabano Dabine - A software developer passionate about crafting accessible, pixel-perfect digital experiences for the web.',
   generator: 'v0.app',
   icons: {
     icon: [
