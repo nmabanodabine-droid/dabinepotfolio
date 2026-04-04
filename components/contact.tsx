@@ -41,7 +41,7 @@ export function Contact() {
         </p>
 
         <a
-          href="mailto:nshuti.dabine@gmail.com"
+          href="mailto:nmabanodabine@gmail.com"
           className="fade-up opacity-0 translate-y-8 transition-all duration-700 delay-300 ease-out inline-flex items-center justify-center px-8 py-4 border-2 border-primary text-primary font-mono rounded-lg hover:bg-primary/10 transition-all duration-300 hover:scale-105"
         >
           Say Hello

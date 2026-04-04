@@ -3,12 +3,12 @@
 import { Github, Linkedin, Twitter, Mail, Instagram, Codepen } from "lucide-react";
 
 const socialLinks = [
-  { icon: Github, href: "https://github.com/nshuti-dabine", label: "GitHub" },
-  { icon: Instagram, href: "https://instagram.com", label: "Instagram" },
+  { icon: Github, href: "https://github.com/nmabanodabine-droid", label: "GitHub" },
+  { icon: Instagram, href: "https://instagram.com/dabine_mabano", label: "Instagram" },
   { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
   { icon: Linkedin, href: "https://linkedin.com/in/nshuti-dabine", label: "LinkedIn" },
   { icon: Codepen, href: "https://codepen.io", label: "CodePen" },
-  { icon: Mail, href: "mailto:nshuti.dabine@gmail.com", label: "Email" },
+  { icon: Mail, href: "mailto:nmabanodabine@gmail.com", label: "Email" },
 ];
 
 export function Footer() {
@@ -50,11 +50,11 @@ export function Footer() {
 
         <div className="hidden md:flex fixed bottom-0 right-10 flex-col items-center gap-6 z-20">
           <a
-            href="mailto:nshuti.dabine@gmail.com"
+            href="mailto:nmabanodabine@gmail.com"
             className="text-muted-foreground hover:text-primary transition-colors duration-300 font-mono text-xs tracking-widest"
             style={{ writingMode: "vertical-rl" }}
           >
-            nshuti.dabine@gmail.com
+            nmabanodabine@gmail.com
           </a>
           <div className="w-px h-24 bg-muted-foreground" />
         </div>

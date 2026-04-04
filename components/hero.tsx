@@ -126,10 +126,10 @@ export function Hero() {
           className={`flex justify-center gap-4 mt-12 transition-all duration-700 delay-[600ms] ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
         >
           {[
-          { icon: Github, href: "https://github.com/nshuti-dabine", label: "GitHub" },
+          { icon: Github, href: "https://github.com/nmabanodabine-droid", label: "GitHub" },
             { icon: Linkedin, href: "https://linkedin.com/in/nshuti-dabine", label: "LinkedIn" },
             { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
-            { icon: Mail, href: "mailto:nshuti.dabine@gmail.com", label: "Email" },
+            { icon: Mail, href: "mailto:nmabanodabine@gmail.com", label: "Email" },
           ].map(({ icon: Icon, href, label }) => (
             <a
               key={label}
